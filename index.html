@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Saad El Khamsi - Créateur de designs Print on Demand pour t-shirts, hoodies et accessoires via Merch by Amazon. Découvrez mon portfolio et contactez-moi.">
+  <meta name="keywords" content="design print on demand, t-shirt design, merch by amazon, Saad El Khamsi">
+  <title>SAAD EL KHAMSI - Designer Print on Demand</title>
+  <style>
+    /* Reset et base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+      overflow-x: hidden;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #111 0%, #333 100%);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+      position: relative;
+    }
+    nav a:hover {
+      color: #ff6b6b;
+      transform: translateY(-2px);
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 50%;
+      background: #ff6b6b;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.8s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .container h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+      text-align: center;
+      position: relative;
+    }
+    .container h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #ff6b6b;
+      margin: 10px auto;
+    }
+    .container p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Grid pour portfolio */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .card:hover img {
+      transform: scale(1.05);
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 1.2rem;
+      color: #111;
+    }
+
+    /* Contact */
+    #contact p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #contact p::before {
+      content: '📧';
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+    #contact p:nth-child(2)::before {
+      content: '📸';
+    }
+    #contact p:nth-child(3)::before {
+      content: '📘';
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #111 0%, #333 100%);
+      color: white;
+      margin-top: 60px;
+      font-size: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+      .container {
+        margin: 30px 20px;
+        padding: 20px;
+      }
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SAAD EL KHAMSI</h1>
+  <p>Créateur de designs Print on Demand</p>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="container" id="accueil">
+  <h2>Bienvenue</h2>
+  <p>
+    Je suis Saad El Khamsi, créateur de designs spécialisés dans le Print on Demand. 
+    Je conçois des visuels uniques et accrocheurs pour t-shirts, hoodies et accessoires, 
+    optimisés pour la vente en ligne, notamment via Merch by Amazon. 
+    Mon approche combine créativité, tendances actuelles et simplicité pour maximiser l'impact visuel.
+  </p>
+  <p>
+    Découvrez mes créations et contactez-moi pour collaborer sur vos projets !
+  </p>
+</section>
+
+<section class="container" id="apropos">
+  <h2>À propos de moi</h2>
+  <p>
+    Passionné par le design graphique depuis des années, je me spécialise dans le e-commerce et le Print on Demand. 
+    Avec une expérience dans la création de visuels modernes, je développe des concepts adaptés à diverses niches : 
+    humour, motivation, pop culture, et bien plus.
+  </p>
+  <p>
+    Mon objectif est de produire des designs simples, efficaces et attractifs qui se vendent bien. 
+    Chaque création est pensée pour être imprimable, durable et tendance, garantissant un retour sur investissement pour mes clients.
+  </p>
+</section>
+
+<section class="container" id="portfolio">
+  <h2>Exemples de designs (inspiration libre)</h2>
+  <p>Ces images sont des exemples inspirés de designs Print on Demand. Pour des créations personnalisées, contactez-moi !</p>
+  <div class="grid" id="designs"></div>
+</section>
+
+<section class="container" id="contact">
+  <h2>Contact</h2>
+  <p>Email : <a href="mailto:elkhamssi.sa@gmail.com">elkhamssi.sa@gmail.com</a></p>
+  <p>Instagram : <a href="https://www.instagram.com/elkha_msi" target="_blank">@elkha_msi</a></p>
+  <p>Facebook : <a href="https://www.facebook.com/Saad Khm" target="_blank">Saad Khm</a></p>
+</section>
+
+<footer>
+  © 2026 - SAAD EL KHAMSI. Tous droits réservés.
+</footer>
+
+<script>
+  const accessKey = "2IfHV_n7YanCsIQOmVSYfFct7duHO3JMtQfLGM9NRAo"; 
+
+  fetch(`https://api.unsplash.com/search/photos?query=tshirt+design&per_page=8&client_id=${accessKey}`)
+    .then(res => res.json())
+    .then(data => {
+      const grid = document.getElementById("designs");
+      data.results.forEach((img, index) => {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `
+          <img src="${img.urls.small}" alt="Design de t-shirt inspirant ${index + 1}">
+          <h3>Design ${index + 1}</h3>
+        `;
+        grid.appendChild(div);
+      });
+    })
+    .catch(() => {
+      document.getElementById("designs").innerHTML =
+        "<p>Impossible de charger les images. Vérifiez votre connexion ou la clé Unsplash.</p>";
+    });
+
+  // Smooth scroll pour la navigation
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
